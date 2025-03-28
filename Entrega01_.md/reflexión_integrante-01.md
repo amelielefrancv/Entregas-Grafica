@@ -10,5 +10,5 @@
 #### 3. Tambien me gustaria poder exponer que generos y su respectivas bandas son los que suenan mas en Chile para ofrecer nuevo contenido musical.
 
 ## ¿Qué te gustaría aprender en este proyecto?
-#### Me gustaría aprender a analizar bases de datos y a clasificar tanto porcentajes como rankings y promedios que pueda arrojar la investigación. También poder comunicar una información de manera clara e interesante que además es muy útil para mi futuro como profesional. 
+##### Me gustaría aprender a analizar bases de datos y a clasificar tanto porcentajes como rankings y promedios que pueda arrojar la investigación. También poder comunicar una información de manera clara e interesante que además es muy útil para mi futuro como profesional. 
 
