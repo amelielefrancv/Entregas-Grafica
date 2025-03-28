@@ -1,4 +1,4 @@
-# Relexión: Ignacio Stier
+# Relexión: Ignacio Stier Ruiz
 ## ¿Por qué es relevante para ti realizar este tema?
 #### La música es un tema el cual me apasiona. Saber y entender más la música es algo que siempre ha llamado mi atención, es muy interesante también poder analizar los comportamientos de las personas respecto a ella y poder tener una idea de cómo el gusto y preferencias de la gente ha mutado a través de los años.
 ## ¿Qué esperas contar y/o revelar con él? ¿Cuál es el impacto que esperas generar?
