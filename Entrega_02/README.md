@@ -1,0 +1,39 @@
+# Entrega 02 - Actualización Proyecto de Investigación de Datos
+
+## Hipótesis actual
+
+**En Chile, la radio tradicional ofrece una mayor diversidad musical que las plataformas de streaming, las cuales tienden a concentrar el consumo en torno a unos pocos géneros, particularmente el género urbano.**
+
+## Preguntas de investigación nuevas/actuales:
+
+1. ¿Cuántos géneros distintos aparecen en los rankings top 100 de radios chilenas y de Spotify entre 2020 y 2024?
+2. ¿Qué porcentaje del ranking mensual de Spotify en Chile corresponde a música urbana o reggaetón?
+3. ¿Qué géneros o artistas aparecen en la radio pero no en Spotify, y viceversa?
+4. ¿La diversidad musical en radios se ha mantenido, incrementado o reducido en los últimos años? ¿Y en Spotify?
+5. ¿Qué artistas chilenos logran aparecer en ambos rankings (radios y Spotify)?
+6. ¿Qué nacionalidades dominan el ranking de Spotify en Chile (aparte de Chile)?
+
+## Avance del proyecto en relación con la hipótesis y preguntas
+
+Como equipo decidimos trabajar con dos fuentes de datos principales:
+
+- El **ranking mensual top 100 de musica chilena en radios**, publicado por la Sociedad Chilena del Derecho de Autor (SCD) que tiene datos desde el 2016. Para la recolección de datos de esta investigación acotamos el análisis al período **2020-2024**.
+- El **ranking semanal de las top 100 de Spotify Chile**, disponible en Spotify Charts desde 2017, del cual tomamos el mismo rango de tiempo para mantener comparabilidad.
+
+Para poder medir estos reportes de forma mas igualitaria, elegi construir la base entre los años 2020-2024, ya que el reporte del SCD recien el 2021 elaboró un ranking mezclando tanto canciones nacionales como internacionales,metrica que Spotify venia utilizando desde sus datos del 2017. Por otro lado, Spotify solo ofrece rankings por semana, mientras que le SCD tiene uno mensual, trate de calzar las fechas de Spotify del tal modo que la semana elegida para representar los datos fuera de la ultima semana del mes (siempre trantando de quedar en los perimetros de este mismo). Con esta medición es como transformamos estos reportes en bases de datos estructuradas via excel (por fecha, medio, posición, artista, título de canción, género estimado y nacionalidad), lo que nos ha permitido empezar a comparar el comportamiento de consumo de ambos medios.  
+
+Lo que hemos observado hasta ahora es que en Spotify predomina la música urbana y reggaeton, tanto de artistas chilenos como internacionales. En cambio, en las radios se repiten más ciertos artistas, pero se detectan una mayor cantidad de géneros distintos, destacando el pop, el rock y la cumbia.
+
+Aun estamos decidiendo cómo definir y medir **"diversidad musical"**, quizas podriamos contar la cantidad de géneros distintos por mes. 
+
+## Síntesis de la historia
+
+La radio y las plataformas de streaming siempre han servido como medios de difusión y consumo musical. A pesar de sus similitudes, estos dos no siempre reflejan las mismas preferencias. 
+
+Los datos de Spotify en Chile muestran una clara tendencia hacia el consumo de música urbana, así como reguetón y trap en los rankings más altos. Mientras tanto, la radio chilena presenta un abanico más diverso de géneros musicales para ofrecer. 
+
+Esto nos lleva a cuestionar que tan verdaderamente democráticas son plataformas como Spotify en cuanto a los géneros que predominan, y qué rol juega la radio en la exposición de otros géneros y artistas. 
+
+Es a través de un análisis de los años 2021 a 2024 que buscamos entender cómo se configura la preferencia musical en Chile, qué porcentaje representan los artistas nacionales e internacionales, y cómo ha evolucionado la diversidad musical en estos dos importantes medios de la actualidad.
+
+
