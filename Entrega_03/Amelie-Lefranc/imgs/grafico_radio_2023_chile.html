@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"labelFontSize": 12, "titleFontSize": 14}, "title": {"anchor": "start", "fontSize": 18}}, "data": {"name": "data-f714b1fc1aeccbe38bd53697fff84833"}, "mark": {"type": "bar", "color": "#e377c2"}, "encoding": {"tooltip": [{"field": "Artista", "type": "nominal"}, {"field": "cantidad", "type": "quantitative"}], "x": {"field": "cantidad", "title": "Cantidad de canciones", "type": "quantitative"}, "y": {"field": "Artista", "sort": "-x", "title": "Artista", "type": "nominal"}}, "height": 400, "title": "Top 10 artistas con m\u00e1s canciones en Radio 2023 Chile", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-f714b1fc1aeccbe38bd53697fff84833": [{"Artista": "Dua Lipa", "cantidad": 39}, {"Artista": "Harry Styles", "cantidad": 35}, {"Artista": "Karol G", "cantidad": 28}, {"Artista": "Ed Sheeran", "cantidad": 26}, {"Artista": "Mon Laferte", "cantidad": 22}, {"Artista": "Rosal\u00e3\u00adA", "cantidad": 21}, {"Artista": "Los Bunkers", "cantidad": 21}, {"Artista": "Paloma Mami", "cantidad": 19}, {"Artista": "Taylor Swift", "cantidad": 18}, {"Artista": "Chayanne", "cantidad": 16}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
