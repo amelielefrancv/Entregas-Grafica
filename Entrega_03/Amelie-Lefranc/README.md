@@ -1,1 +1,41 @@
+# Documentación del Proyecto de Visualización de Datos
 
+## Proceso de visualización
+Al momento de definir cómo realizar las visualizaciones, retomé las seis preguntas clave que había formulado en la entrega 2 del proyecto. A partir de ellas, ordené nuevamente mis bases de datos, rellené algunas casillas vacías y revisé el orden de las columnas antes de subir los archivos a Google Colab.
+
+Comencé explorando todo lo que pudiera saber sobre la radio. Este primer acercamiento fue complejo, ya que debia ser muy precisa con los datos. En Colab, utilicé las librerías Pandas y Altair, y leí mis archivos CSV uno por uno, aplicando el mismo código para cada año. Opté por hacer visualizaciones separadas como punto de partida, ya que unir todos los años en un solo gráfico resultó difícil en esta etapa.
+
+Cuando logré obtener los registros de Spotify para 2021 y 2022 (mi dupla se encargó de completar esa parte, mientras yo trabajaba en la base de radio), comencé a cruzar la información entre ambas plataformas para observar la diversidad y las diferencias entre ellas.
+
+Pude generar gráficos más básicos, ya que al intentar hacer visualizaciones más complejas, la base de datos se desordenaba o no se leía correctamente. Planeo incorporar nuevas columnas, como sello discográfico y número de ejecuciones en radio, y también simplificar la información de nacionalidades, dejando solo la del cantante principal en cada caso y asi dejar aun mas limpia mi base de datos.
+
+Otra dificultad surgió al intentar graficar por artistas, ya que al haber muchos, los gráficos resultaban confusos o desordenados.
+
+## Base de datos usada
+Nuestra investigación se basa en dos fuentes principales de datos:
+
+Ranking mensual Top 100 de música chilena en radios, publicado por la Sociedad Chilena del Derecho de Autor (SCD), con registros disponibles desde 2016. Para este proyecto, acotamos el análisis al período comprendido entre 2020 y 2024.
+
+Ranking semanal Top 100 de Spotify Chile, disponible en Spotify Charts desde 2017. Para asegurar la comparabilidad entre ambas fuentes, también seleccionamos los años 2020 a 2024.
+
+Para procesar esta información, descargamos los archivos en formato PDF y CSV, los que posteriormente organizamos en Excel, seleccionando las columnas clave: Fecha, Medio, Año, Posición, Artista, Canción y Género. Como cada medio entrega 100 registros por mes, el total de datos procesados fue significativo. Finalmente, estructuramos la información en ocho archivos Excel: cuatro correspondientes a la radio (2021 a 2024) y cuatro a Spotify (2021 a 2024).
+
+Uno de los principales desafíos fue la categorización de los géneros musicales. Como grupo, decidimos agrupar los géneros específicos en categorías macro para facilitar el análisis y la visualización de los datos. Las categorías definidas fueron: Pop, Rock, Latino/Tropical, Folk/Indie, Electrónica, Urbano y Otros.
+
+Utilizamos esta información porque era la más actualizada y completa disponible, y nos permitía comparar de forma directa la radio y Spotify en Chile.
+
+## Preguntas que responde la visualización
+
+- ¿Qué géneros musicales predominan en la radio chilena entre 2021 y 2024?
+- ¿Cómo varía la presencia de cada género musical en la radio a lo largo del tiempo?
+- ¿Qué artistas tienen más canciones en el ranking radial cada año?
+- ¿Qué nacionalidades tienen los artistas más presentes en la radio chilena?
+- ¿Qué porcentaje del consumo en Spotify Chile corresponde a música urbana y reguetón?
+- ¿Qué nacionalidades lideran el consumo musical en Spotify Chile?
+- ¿Cómo se comparan las nacionalidades predominantes entre Spotify y la radio?
+- ¿Qué diferencias existen entre la radio y Spotify en términos de diversidad de artistas?
+- ¿Coinciden los géneros predominantes entre la radio y Spotify?
+
+## Observaciones y consideraciones finales
+
+Aún nos falta seguir depurando la base de datos y agregar nuevas columnas para el analisis. Otro aspecto urgente por definir es cómo manejar la gran cantidad de nacionalidades y artistas presentes.
