@@ -1,0 +1,17 @@
+# Ficha técnica de la base de datos
+
+| Variable     | Descripción                              | Tipo       |
+|--------------|----------------------------------------|------------|
+| Fecha        | Fecha de aparición en el ranking       | Fecha      |
+| Medio        | Radio o Spotify                        | Categórica |
+| Posición     | Puesto en el ranking                    | Numérica   |
+| Artista      | Nombre del artista                      | Texto      |
+| Título       | Nombre de la canción                    | Texto      |
+| Género       | Género musical estimado                 | Texto      |
+| Nacionalidad | País de origen del artista              | Texto      |
+
+## Observaciones
+
+- Algunos géneros fueron estimados cuando no estaban explícitos.  
+- Las nacionalidades incluyen agrupaciones cuando hay múltiples artistas.  
+- El periodo analizado es 2020-2024.
