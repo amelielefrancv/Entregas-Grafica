@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-981f3956725f325dd3252701cdab7c06"}, "mark": {"type": "arc"}, "encoding": {"color": {"field": "Genero", "type": "nominal"}, "theta": {"field": "Porcentaje", "type": "quantitative"}, "tooltip": [{"field": "Genero", "type": "nominal"}, {"field": "Cuenta", "type": "quantitative"}, {"field": "Porcentaje", "format": ".1f", "type": "quantitative"}]}, "height": 400, "params": [{"name": "Selecciona el a\u00f1o", "select": {"type": "point", "fields": ["A\u00f1o"]}, "bind": {"input": "select", "options": [2024.0]}}], "title": "Proporci\u00f3n de g\u00e9neros musicales por a\u00f1o en Radio durante 2024", "transform": [{"filter": {"param": "Selecciona el a\u00f1o"}}], "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-981f3956725f325dd3252701cdab7c06": [{"A\u00f1o": 2024, "Genero": "Electronica", "Cuenta": 21, "Porcentaje": 1.7500000000000002}, {"A\u00f1o": 2024, "Genero": "Folk/Indie", "Cuenta": 16, "Porcentaje": 1.3333333333333335}, {"A\u00f1o": 2024, "Genero": "Latino/Tropical", "Cuenta": 183, "Porcentaje": 15.25}, {"A\u00f1o": 2024, "Genero": "Otro", "Cuenta": 3, "Porcentaje": 0.25}, {"A\u00f1o": 2024, "Genero": "Pop", "Cuenta": 513, "Porcentaje": 42.75}, {"A\u00f1o": 2024, "Genero": "Rock", "Cuenta": 123, "Porcentaje": 10.25}, {"A\u00f1o": 2024, "Genero": "Urbano", "Cuenta": 341, "Porcentaje": 28.416666666666668}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
