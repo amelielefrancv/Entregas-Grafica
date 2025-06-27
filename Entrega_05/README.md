@@ -3,11 +3,6 @@
 ## Titular del reportaje
 Apaga Spotify, la radio suena distinto
 
-# Webstory: Diversidad musical en radios chilenas y Spotify (2021-2024)
-
-## Titular del reportaje
-Apaga Spotify, la radio suena distinto
-
 ## Resumen de nuestro reportaje, ¿de qué se trata la historia?
 Este reportaje explora las diferencias y similitudes entre los contenidos musicales que suenan en las radios tradicionales y los del sistema meritocrático y democrático de los servicios de streaming, en este caso específico los de Spotify. Todo esto a través del análisis de datos, buscamos entender tanto cómo es que varía tanto la diversidad de estilos musicales que suenan en estas plataformas, como los artistas que dominan estos espacios durante un periodo de tiempo de 4 años. Desde 2021 hasta el año 2024, así buscamos responder una gran pregunta: ¿Quién da más espacio a la diversidad en la música que escuchamos a diario?. Los resultados permiten observar que además de tener diferencias fundamentales en cuanto a música emitida, existen similitudes muy interesantes. Lo que plantea preguntas sobre qué tan diversa es realmente el consumo de música en Chile.
 
