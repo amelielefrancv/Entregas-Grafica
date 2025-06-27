@@ -1,0 +1,341 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #ffe6f0;
+  color: #6a006a;
+  scroll-behavior: smooth;
+}
+
+/* Hero / Encabezado */
+.hero {
+  background-color: #de8ebd;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative; /* necesario para posicionar el ::before */
+  overflow: hidden; /* evitar desbordes */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('banner.png'); /* Ajusta ruta si es necesario */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Ajusta para mejor contraste */
+  z-index: 0; /* Detrás del contenido */
+}
+
+/* Texto del header sobre la imagen */
+.hero > .titulo-contenedor {
+  position: relative;
+  z-index: 1;
+}
+
+.collage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.titulo {
+  font-size: 3rem;
+  color: #6a006a;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.pregunta {
+  font-size: 1rem;
+  color: #300030;
+  font-style: italic;
+}
+
+/* Subtítulo general para cada sección */
+.subtitulo-seccion {
+  font-size: 2rem;
+  color: #c1006f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Planteamiento */
+.planteamiento {
+  background-color: #fff0f7;
+  color: #3d003d;
+  padding: 50px 20px;
+}
+
+.contenedor-texto {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.contenedor-texto p {
+  margin-bottom: 20px;
+}
+
+/* Hipótesis */
+.hipotesis {
+  background-color: #fde2f5;
+  border-left: 5px solid #d10077;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #4a004a;
+}
+
+/* Datos */
+.datos {
+  background-color: #fff;
+  color: #4a004a;
+  padding: 50px 20px;
+}
+
+/* Comparación */
+.comparacion {
+  background-color: #fff8fc;
+  color: #3a003a;
+  padding: 60px 20px;
+}
+
+.comparacion .contenedor-texto {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.grafico {
+  background-color: #ffe6f3;
+  border: 2px dashed #d36aa0;
+  padding: 30px;
+  margin: 30px 0;
+  text-align: center;
+  border-radius: 15px;
+  font-style: italic;
+  color: #660040;
+}
+
+.grafico-torta::before {
+  content: "🎵 Gráfico de Torta";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+.grafico-calor::before {
+  content: "🔥 Mapa de Calor";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+/* Artistas */
+.artistas {
+  background-color: #fff0f9;
+  color: #3f003f;
+  padding: 60px 20px;
+}
+
+.artistas .contenedor-texto {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.subtitulo-subseccion {
+  font-size: 1.5rem;
+  color: #aa007f;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.grafico-dominio::before {
+  content: "🎤 Artistas por Plataforma";
+  color: #a6006b;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.grafico-chilenos::before {
+  content: "🇨🇱 Artistas Chilenos";
+  color: #a6006b;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.grafico-origen::before {
+  content: "🌍 Origen de los Artistas";
+  color: #a6006b;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Curiosidades */
+.curiosidades {
+  background-color: #fceaff;
+  color: #3e004e;
+  padding: 60px 20px;
+}
+
+.curiosidades .contenedor-texto {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.curio {
+  background-color: #fff5fc;
+  border-left: 5px solid #b30085;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+}
+
+.curio h3 {
+  font-size: 1.3rem;
+  color: #87005c;
+  margin-bottom: 10px;
+}
+
+/* Cierre */
+.cierre {
+  background-color: #fff;
+  color: #3b003f;
+  padding: 60px 20px;
+}
+
+.cierre .contenedor-texto {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.equipo {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.equipo li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.boton-descarga {
+  display: inline-block;
+  background-color: #d10077;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.boton-descarga:hover {
+  background-color: #a6005f;
+}
+
+/* Estilos para iframes de gráficos */
+.iframe-grafico {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(107, 0, 107, 0.15);
+  max-width: 100%;
+  margin: 30px 0;
+  display: block;
+}
+
+/* Responsive: ajuste tamaños de títulos en pantallas pequeñas */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+  }
+  .subtitulo {
+    font-size: 1.2rem;
+  }
+}
+
+.grafico-composicion-2021::before {
+  content: "📊 Composición por género (Spotify 2021)";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+.grafico-composicion-2022::before {
+  content: "📊 Composición por género (Spotify 2022)";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+.grafico-composicion-2023::before {
+  content: "📊 Composición por género (Spotify 2023)";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+.grafico-composicion-2024::before {
+  content: "📊 Composición por género (Spotify 2024)";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a6005c;
+}
+
+/* Nuevo bloque: gráficos composición radio y Spotify */
+.graficos-composicion {
+  background-color: #fff8fc;
+  padding: 60px 20px;
+}
+
+.graficos-composicion .contenedor-texto {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.graficos-composicion h3 {
+  font-size: 1.3rem;
+  color: #87005c;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+

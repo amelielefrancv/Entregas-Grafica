@@ -1,0 +1,191 @@
+/* Paleta de colores */
+:root {
+    --color1: #CD4693;
+    --color2: #A0247C;
+    --color3: #E1A9C2;
+    --color4: #EBA3B4;
+    --color5: #E775A1;
+    --background: #FFFFFF;
+}
+
+/* Tipografía importada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: var(--background);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color2);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', cursive;
+    color: var(--color1);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    margin: 10px 20px;
+    line-height: 1.6;
+}
+
+/* HEADER con banner de fondo */
+header.hero {
+    position: relative;
+    padding: 80px 20px 60px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    overflow: hidden;
+    border-bottom: 5px solid var(--color1);
+}
+
+header.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('banner.png'); /* Pon aquí la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Ajusta la transparencia para que el texto se lea */
+    z-index: 0;
+}
+
+/* Contenedor del texto para estar encima de la imagen */
+header.hero .titulo-contenedor {
+    position: relative;
+    z-index: 1;
+}
+
+/* Texto del título */
+header.hero h1, header.hero h2, header.hero p {
+    margin: 0 auto 10px;
+    max-width: 900px;
+}
+
+/* Resto del CSS no modificado */
+footer {
+    background-color: var(--color5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* NUEVO: Estilos para los bloques */
+.bloque {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contenedor-texto {
+    margin-bottom: 40px;
+}
+
+.subtitulo-seccion {
+    font-size: 2rem;
+    color: var(--color1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo-subseccion {
+    font-size: 1.5rem;
+    color: var(--color2);
+    margin: 20px 0 10px;
+}
+
+/* NUEVO: Estilo para iframes */
+.iframe-grafico {
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.iframe-grafico:hover {
+    transform: scale(1.02);
+}
+
+.explicacion {
+    background-color: var(--color4);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    color: #333333;
+}
+
+.grafico {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* NUEVO: Bloque de curiosidades */
+.curiosidades {
+    background-color: var(--color3);
+    padding: 40px 20px;
+    border-top: 5px solid var(--color1);
+}
+
+.curio {
+    background-color: var(--background);
+    border-left: 5px solid var(--color5);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Pequeña mejora al footer */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Opcional: Transiciones suaves */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
